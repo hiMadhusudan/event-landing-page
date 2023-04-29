@@ -1,0 +1,17 @@
+{
+  "name": "envirohive-event-landing-page",
+  "version": "1.0.0",
+  "description": "Event registration landing page for Envirohive",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase": "^9.21.0",
+    "mongoose": "^7.1.0"
+  }
+}

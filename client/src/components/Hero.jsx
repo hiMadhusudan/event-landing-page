@@ -103,7 +103,7 @@ const HeroSection = ({ scrollToSection, registrationRef }) => {
   const audio = new Audio(drop);
   audio.autoplay = true;
   audio.muted = true; 
-  const countdownDate = new Date("2023-05-26T20:50:00+05:30");
+  const countdownDate = new Date("2024-10-26T20:50:00+05:30");
 
 const [days, setDays] = React.useState("");
 const [hours, setHours] = React.useState("");

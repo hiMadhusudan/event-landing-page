@@ -133,7 +133,8 @@ function RegistrationForm() {
     if (validateForm()) {
       try {
         // api endpoint for registration form on the server
-        const apiEndpoint = 'http://localhost:3000/api/registration';
+        const apiEndpoint = 'https://envirohive-server-hdgl.vercel.app/';
+        // const apiEndpoint = 'https://envirohive-server.vercel.app/registration';
   
         // using axios library to send a POST request with the formData
         const response = await axios.post(apiEndpoint, formData);

@@ -49,7 +49,8 @@ mongoose.connect(process.env.MONGODB_URI, {
   const User = mongoose.model('User', userSchema); // mongoose model for user collection based on userschema
 
   // route for handling POST requests to /api/registration
-  app.post('/api/registration', async (req, res) => {
+// earlier it was app.post('/api/registration', async (req, res) => {...} ) but we changed it to '/'
+  app.post('/', async (req, res) => {
     try {
       // Check if the email address is already in use
       const existingUser = await User.findOne({ email: req.body.email });
